@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../multimedia/background.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+ width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    font-family: cursive;
+    font-weight: 100; 
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+.body {
+    margin: 0px;
+    padding: 0px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Akshar', sans-serif;
+    font-weight: bold;
+
+}
+form{
+    background-color: beige;
+    padding: 30px;
+    border-radius: 10px ;
+
+}
+form h1{
+    font-size: 20px;
+}
+form .sep{
+    width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+}
+form .corps-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .corps-form .boite{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corps-form .gauche .boite input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9 ;
+    outline-color: #747cdf;
+    border-radius: 5px;
+}
+form .corps-form .gauche .boite i{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: #747cdf;
+}
+form .corps-form .droite{
+    margin-left: 40px;
+
+}
+form .corps-form .droite .boite{
+    height: 100%; 
+}
+form .corps-form .droite .boite textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+}
+form .pied-form button{
+    margin-top: 10px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+form .pied-form button{
+    margin-top: 10px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .pied-form button:hover{
+    transform: scale(1.05);
+}
+.bdy {
+    
+    margin: 10px;
+    padding: 10px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form .container{
+    background-color:beige;
+    padding: 10px;
+    border-radius: 10px ;
+    margin: none;
+    size: 100px;
+}
+form .container h1{
+    font-size: 20px;
+}
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+}
+form .text textarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:30px;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+    
+}
+form .button{
+    margin-left: 30px;
+    margin-top: 2px;
+}
+input[type="submit"],button{
+    padding: 3px 5px;
+    border: none;
+    outline:none ;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"]{
+    color: #fff;
+    background-color: #273c75;
+}
+form .button button{
+    color: #fff;
+    background-color: rgb(247, 37, 37);
+}
+table{
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 10px;
+
+}
+table .info{
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+}
+table .acc{
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+}
+table .elm{
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.containerr{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "cover content";
+    box-shadow:-2px 0px 33px 0px rgba(0,0,0,0.75);
+}
+
+.cover{
+    grid-area: cover;
+    height: 70vh;
+    background-image: url('../multimedia/asus\ rog\ strix.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-color: white;
+}
+.contentt{
+    grid-area: content;
+    background:#efefef;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+.navig{
+    margin: 10px 20px;
+    height: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: gray;
+}
+.content-body{
+    display: flex;
+    flex-direction: row;
+}
+.pages{
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: gray;
+    position: relative;
+    transform: translateY(38px);
+}
+.pages span{
+    margin-top: 15px;
+}
+.black-label{
+    width: 80%;
+}
+.black-label p{
+    font-size: 13px;
+    color: gray;
+    width: 70%;
+}
+.black-label a{
+    font-size: 15px ;
+    width: 100%;
+    text-decoration-line: none;
+    color: black;
+}
+.title{
+    font-size: 64px;
+}
+.prix{
+    margin: 50px 0px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid rgb(255,177,33);
+}
+.prix span{
+    padding-left: 10px;
+}
+.crt{
+    color: gray;
+    left: 2px;
+    border-bottom: 1px solid rgb(177,177,177);
+}
+.active{
+    color: black;
+    position: relative;
+    transform: translateX(60px);
+}
+.active::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 67px;
+    right: 117%;
+    top: 45%;
+    background-color: #555;
+    height: .2em;
+    min-height: 1px;
+    z-index: 1;
+}
+.cover1{
+    grid-area: cover;
+    height: 70vh;
+    background-image: url('../multimedia/casque-micro-gaming-spirit-of-gamer-pro-h7-led-rgb.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-color: white;
+}
+.cover2{
+    grid-area: cover;
+    height: 70vh;
+    background-image: url('../multimedia/refrigerateur-samsung-rt50-tunisie.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-color: white;
+}
+table a{
+    color: black;
+    text-decoration-line: none;
+    width: 100% ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
